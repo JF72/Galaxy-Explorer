@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+/*DEVELOPER: Jason Fernandez, IS117 - 004, Spring 2023*/
+body{
+background: url('../images/solar_system.jpeg') no-repeat center center fixed;
+background-size: cover;
+text-align: center;
+}
+
+h1, p{
+color: white;
+}
+
+h1{
+background-image: url('../images/new_purple.png');
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+font-size: 30px;
+font-weight: bold;
+font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+header{
+backdrop-filter: blur(10px);
+}
+
+p{
+font-size: 18px;
+}
+
+#home-icon{
+    margin-top: -5px;
+    margin-right: -10px;
+    margin-left: 10px;
+    height:30px;
+    width: auto;
+}
+
+div .dropdown-menu #current{
+    background-color: rgb(164, 100, 164);
+    text-decoration: none;
+
+}
+div .dropdown-menu a{
+    background-color: #efefef;
+}
+
+div .dropdown-menu a:hover{
+    background-color: #7a85cc;
+    text-decoration: none;
+
+}

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Neptune</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  <!--Personal CSS-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+  <!--DEVELOPER: Jason Fernandez, IS117 - 004, Spring 2023-->
+  <body>
+    <nav class="navbar navbar-expand-md
+    justify-content-start
+    bg-dark navbar-dark
+    col-12"><!--navbar-fixed-->
+    
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html"><img src="images/home_icon.gif" id="home-icon"alt="Earth icon"></a>
+    <!-- Responsive Button for the smaller menu -->
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <!-- Links -->
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle test" href="#" id="navbardrop"
+                 data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Rocky Planets
+              </a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Mercury.html">Mercury</a>
+                  <a class="dropdown-item" href="Venus.html">Venus</a>
+                  <a class="dropdown-item" href="Earth.html">Earth</a>
+                  <a class="dropdown-item" href="Mars.html">Mars</a>
+              </div>
+          </li>
+      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gas Giants
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Jupiter.html">Jupiter</a>
+                <a class="dropdown-item" href="Saturn.html">Saturn</a>
+                <a class="dropdown-item" href="Uranus.html">Uranus</a>
+                <a class="dropdown-item" href="Neptune.html" id="current">Neptune</a>
+            </div>
+        </li>
+    
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planet_converter.html">Weight on Planets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sources.html">Resources</a>
+    </li>   
+    
+    </ul>
+    </div>
+    </nav>
+
+
+
+<div class="container-fluid">
+    <h1 id="top-head">Hello from Neptune!</h1>
+
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Neptune/nept_new.jpg" class="d-block w-100" alt="Photo of Neputune Planet">
+=
+          </div>
+          <div class="carousel-item">
+            <img src="images/Neptune/nept_ring_left.jpg" class="d-block w-100" alt="Left Half of Neptunes Rings">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Neptune/nept_ring_right.jpg" class="d-block w-100" alt="Right Half of Neptunes Rings">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Neptune/cool_nept.jpg" class="d-block w-100" alt="Most recent photo of Neputune">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      </div>
+
+    <br />
+    <h3 id="FF"> Fun Facts about Me</h3>
+    <ul class="FF_list">
+      <li>I am named after the Roman God of the sea, Neptune</li>
+      <li>A day here is 16 hours while a year here is 165 Earth years</li>
+      <li>My distance from the Sun is 4.47 billion km</li>
+      <li>At my closest I'm 4.3 billion km from the Earth and at my furthest I'm 4.68 billion km from Earth</li>
+      <li>I was the first planet to be discovered using math</li>
+      <li>Just like the other gas giants, I also have faint rings</li>
+      <li>I'm mostly made of hydrogen and helium</li>
+      <li>I have 14 moons with my largest being Triton</li>
+      <li>I'm a mix of a gas and ice giant since I'm mostly made of hot and dense icy material</li>
+    </ul>
+
+<br />
+<footer>
+  <p>&copy; Jason Fernandez April 22, 2023 </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+  </body>
+
+</html>

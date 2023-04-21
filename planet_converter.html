@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weight Converter</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/planet_convert.css">
+<link href="css/style.css" rel="stylesheet">
+
+<!--JavaScript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
+</head>
+<!--DEVELOPER: Jason Fernandez, IS117 - 004, Spring 2023-->
+<body>
+
+  <nav class="navbar navbar-expand-md
+  justify-content-start
+  bg-dark navbar-dark
+  col-12"><!--navbar-fixed-->
+  
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><img src="images/home_icon.gif" id="home-icon"alt="Earth icon"></a>
+  <!-- Responsive Button for the smaller menu -->
+  <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+      <!-- Links -->
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle test" href="#" id="navbardrop"
+               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Rocky Planets
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Mercury.html">Mercury</a>
+                <a class="dropdown-item" href="Venus.html">Venus</a>
+                <a class="dropdown-item" href="Earth.html">Earth</a>
+                <a class="dropdown-item" href="Mars.html">Mars</a>
+            </div>
+        </li>
+    
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+             data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gas Giants
+          </a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="Jupiter.html">Jupiter</a>
+              <a class="dropdown-item" href="Saturn.html">Saturn</a>
+              <a class="dropdown-item" href="Uranus.html">Uranus</a>
+              <a class="dropdown-item" href="Neptune.html">Neptune</a>
+          </div>
+      </li>
+  
+      <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="planet_converter.html">Weight on Planets</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="sources.html">Resources</a>
+  </li>
+  
+  </ul>
+  </div>
+  </nav>
+
+
+<header>
+   <h1>Would you like to know how much you weigh on each planet?</h1>
+</header>
+	
+<form> 
+	
+<p> Enter your weight in pounds here:</p>	
+<input type="text" name="pounds" id="pounds">	
+
+<p> Enter your weight in kilograms here:</p>
+<input type="text" name="kilograms" id="kilograms">	
+<br>
+<br>
+<button type="button" id="calc" onclick="calculate()">Convert!</button>	
+
+<button type="button" id="refresh" onclick="refreshPage()"> Refresh!</button>
+
+</form>
+
+<p id="mercury"></p>
+<p id="venus"></p>
+<p id="mars"></p>
+<p id="jupiter"></p>
+<p id="saturn"></p>
+<p id="uranus"></p>
+<p id="neptune"></p>	
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script>
+var input = document.getElementById("pounds");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("calc").click();
+  }
+});
+
+var lol = document.getElementById("kilograms");
+lol.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("calc").click();
+  }
+});	
+
+function calculate(){
+	
+var lb = document.getElementById("pounds").value;
+var kg = document.getElementById("kilograms").value;
+var mercury = 3.7;
+var venus = 8.87;
+var mars = 3.711;
+var jupiter = 24.79;
+var saturn = 10.44;
+var uranus = 8.69;
+var neptune = 11.15;
+if ( isNaN(lb) ){
+alert('Your first input is invalid, please use a valid input.');
+} 
+ 
+if (lb){
+
+let conlb = Number(lb, 10);
+var masslb = (conlb / 9.81).toFixed(2); //gives mass
+var mclb = (masslb * mercury).toFixed(2);
+var vlb = (masslb * venus).toFixed(2);
+var mlb = (masslb * mars).toFixed(2);
+var jlb = (masslb * jupiter).toFixed(2);
+var slb = (masslb * saturn).toFixed(2);
+var ulb = (masslb * uranus).toFixed(2);
+var nlb = (masslb * neptune).toFixed(2);
+
+document.getElementById("mercury").innerHTML = "Your weight on Mercury is " + mclb;
+document.getElementById("venus").innerHTML = "Your weight on Venus is " + vlb;
+document.getElementById("mars").innerHTML = "Your weight on Mars is " + mlb;
+document.getElementById("jupiter").innerHTML = "Your weight on Jupiter is " + jlb;
+document.getElementById("saturn").innerHTML = "Your weight on Saturn is " + slb;
+document.getElementById("uranus").innerHTML = "Your weight on Uranus is " + ulb;
+document.getElementById("neptune").innerHTML = "Your weight on Neptune is " + nlb;
+
+}
+
+if ( isNaN(kg) ){
+alert('Your second input is invalid, please use a valid input.');
+} 
+
+if (kg){
+
+let conkg = Number(kg, 10);
+var kgtolb = conkg * 2.2046226218;
+var roundlb = kgtolb.toFixed(2);
+var masskg = roundlb / 9.81; //gives mass
+var mckg = (masskg * mercury).toFixed(2);
+var vkg = (masskg * venus).toFixed(2);
+var mkg = (masskg * mars).toFixed(2);
+var jkg = (masskg * jupiter).toFixed(2);
+var skg = (masskg * saturn).toFixed(2);
+var ukg = (masskg * uranus).toFixed(2);
+var nkg = (masskg * neptune).toFixed(2);
+document.getElementById("mercury").innerHTML = "Your weight on Mercury is " + mckg;
+document.getElementById("venus").innerHTML = "Your weight on Venus is " + vkg;
+document.getElementById("mars").innerHTML = "Your weight on Mars is " + mkg;
+document.getElementById("jupiter").innerHTML = "Your weight on Jupiter is " + jkg;
+document.getElementById("saturn").innerHTML = "Your weight on Saturn is " + skg;
+document.getElementById("uranus").innerHTML = "Your weight on Uranus is " + ukg;
+document.getElementById("neptune").innerHTML = "Your weight on Neptune is " + nkg;
+}
+}
+
+	
+function refreshPage(){
+    window.location.reload();
+}
+
+calculate();
+
+</script>
+	
+</body>
+</html>

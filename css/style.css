@@ -1,0 +1,135 @@
+/*DEVELOPER: Jason Fernandez, IS117 - 004, Spring 2023*/
+
+body{
+    background: url('../images/night_sky.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+#top-head{
+    text-align:center;
+    color:slateblue;
+}
+.card-img-top{
+    width:100%;
+    height:auto;
+  }
+
+  .carousel-inner > .carousel-item > img
+{
+    width: 600px;
+    height: 600px;
+}
+
+
+.carousel{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 600px
+}
+.row{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer > p {
+    color: white;
+    text-align: center;
+}
+
+div .card{
+    background-color: transparent;
+}
+
+.card-title, .card-text{
+    color: white;
+}
+
+div .dropdown-menu a{
+    background-color: #efefef;
+}
+
+div .dropdown-menu a:hover{
+    background-color: #7a85cc;
+    text-decoration: none;
+
+}
+
+#home-icon{
+    margin-top: -5px;
+    margin-right: -10px;
+    margin-left: 10px;
+    height:30px;
+    width: auto;
+}
+
+div .dropdown-menu #current{
+    background-color: rgb(164, 100, 164);
+    text-decoration: none;
+
+}
+
+h3#FF{
+    text-align: center;
+}
+
+h3#FF, ul.FF_list > li{
+    color: aliceblue;
+    list-style-type: none;
+}
+
+ul.FF_list{
+    display: table;
+    margin: 0 auto;
+}
+label{
+    color: aliceblue;
+}
+
+h1#cont{
+    text-align: center;
+}
+h3#form_h3{
+    color:white;
+}
+p#quote{
+    font-size: 20px;
+    color:rgb(80, 148, 226);
+    text-align: right;
+}
+
+details{
+    text-align: center;
+}
+summary{
+    color: rgb(131, 197, 255);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+p#sum_p > a{
+    color:rgb(202, 150, 38);
+    text-decoration: none;
+}
+
+h3#nasa-head{
+    color:white;
+    text-align: center;
+}
+
+p#nasa-para{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+
+p#nasa-para a{
+    text-decoration:none;
+    color: rgb(255,215,0);
+    text-align: center;
+    font-size: 20px;
+    
+}

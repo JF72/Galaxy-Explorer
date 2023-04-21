@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  <!--Personal CSS-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+  <!--DEVELOPER: Jason Fernandez, IS117 - 004, Spring 2023-->
+  <body>
+    <nav class="navbar navbar-expand-md
+    justify-content-start
+    bg-dark navbar-dark
+    col-12"><!--navbar-fixed-->
+    
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html"><img src="images/home_icon.gif" id="home-icon"alt="Earth icon"></a>
+    <!-- Responsive Button for the smaller menu -->
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <!-- Links -->
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle test" href="#" id="navbardrop"
+                 data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Rocky Planets
+              </a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Mercury.html">Mercury</a>
+                  <a class="dropdown-item" href="Venus.html">Venus</a>
+                  <a class="dropdown-item" href="Earth.html">Earth</a>
+                  <a class="dropdown-item" href="Mars.html">Mars</a>
+              </div>
+          </li>
+      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gas Giants
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Jupiter.html">Jupiter</a>
+                <a class="dropdown-item" href="Saturn.html">Saturn</a>
+                <a class="dropdown-item" href="Uranus.html">Uranus</a>
+                <a class="dropdown-item" href="Neptune.html">Neptune</a>
+            </div>
+        </li>
+    
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planet_converter.html">Weight on Planets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sources.html">Resources</a>
+    </li>    
+    </ul>
+    </div>
+    </nav>
+
+
+
+<div class="container-fluid">
+    <h1 id="top-head">Hello Universe!</h1>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slideshow/new_NGC_1672.jpg" class="d-block w-100" alt="NGC 1672">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>NGC 1672</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slideshow/new_Sombrero_galaxy.jpg" class="d-block w-100" alt="Sombrero Galaxy">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sombrero Galaxy</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slideshow/new_Whirlpool_galaxy.jpg" class="d-block w-100" alt="Whirlpool Galaxy">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Whirlpool Galaxy</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slideshow/Messier_106.jpeg" class="d-block w-100" alt="Messier 106">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Messier 106</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    </div>
+
+  
+    <br />
+  <div class="row">
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/Mercury/new_mercury copy.jpg" alt="Card image cap"/>
+          <div class="card-body">
+            <h5 class="card-title">Mercury</h5>
+            <p class="card-text">Mercury, the closest planet to the sun, is not the hottest planet in our solar system despite being only 36 million miles away. It has desert-like temperature extremes with scorching days and freezing nights.  </p>
+            <a href="Mercury.html" class="btn btn-primary">Go to Mercury</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/Venus/venus.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Venus</h5>
+            <p class="card-text">Venus, the second closest planet to the sun at 67 million miles away, is the hottest planet in the solar system. It's extreme heat is caused by its extremely thick atmosphere that traps all the heat within it. </p>
+            <a href="Venus.html" class="btn btn-primary">Go to Venus</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="images/Earth/new_earth.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Earth</h5>
+    <p class="card-text">Earth, the third planet from the sun, is the only known planet to support life, with a protective atmosphere that shields us from harmful radiation and moderate temperature ranges suitable for diverse ecosystems.</p>
+    <a href="Earth.html" class="btn btn-primary">Go to Earth</a>
+  </div>
+</div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/Mars/Mars_card.jpg" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title">Mars</h5>
+          <p class="card-text">Mars, the fourth planet from the sun, is known as the "Red Planet" due to its rusty appearance and has a thin atmosphere with frigid temperature ranges that vary between day and night.</p>
+          <a href="Mars.html" class="btn btn-primary">Go to Mars</a>
+          </div>
+          </div>
+      </div>
+      </div>
+  <br>
+  <div class="row">
+      <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/Jupiter/Jupiter_Card.jpg" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title">Jupiter</h5>
+          <p class="card-text">Jupiter, the largest planet in the solar system, has a thick atmosphere with extreme wind speeds and temperature variations that occur between its poles and equator.</p>
+          <a href="Jupiter.html" class="btn btn-primary">Go to Jupiter</a>
+          </div>
+          </div>
+          </div>
+      <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/Saturn/Saturn_card.jpg" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title">Saturn</h5>
+          <p class="card-text">Saturn, the sixth planet from the sun, is known for its iconic rings made of ice and rock particles, with atmospheric temperature ranges and extreme wind speeds.</p>
+          <a href="Saturn.html" class="btn btn-primary">Go to Saturn</a>
+          </div>
+          </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/Uranus/Uranus_card.jpg" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title">Uranus</h5>
+          <p class="card-text">Uranus, the seventh planet from the sun, has a unique tilt that causes it to appear to roll on its side, with extreme seasonal temperature changes and a thin ring system.</p>
+          <a href="Uranus.html" class="btn btn-primary">Go to Uranus</a>
+          </div>
+          </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/Neptune/Neptune_card.jpg" alt="Card image cap">
+          <div class="card-body">
+          <h5 class="card-title">Neptune</h5>
+          <p class="card-text">Neptune, the eighth planet from the sun, has a blue hue due to the presence of methane in its atmosphere and extreme wind speeds that cause storms and temperature variations.</p>
+          <a href="Neptune.html" class="btn btn-primary">Go to Neptune</a>
+          </div>
+          </div>
+      </div>
+</div>
+<br />
+<footer>
+  <p>&copy; Jason Fernandez April 22, 2023 </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+  </body>
+
+</html>
